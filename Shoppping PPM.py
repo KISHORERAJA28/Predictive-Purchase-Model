@@ -4,28 +4,28 @@ from sklearn.model_selection import train_test_split
 from sklearn.neighbors import KNeighborsClassifier
 
 def load_data(filename):
-    # Load it the fast way
+    
     df = pd.read_csv(filename)
 
-    # Convert months to ints quickly
+    
     mo = {'Jan':0, 'Feb':1, 'Mar':2, 'Apr':3, 'May':4, 'June':5, 
           'Jul':6, 'Aug':7, 'Sep':8, 'Oct':9, 'Nov':10, 'Dec':11}
     
     df['Month'] = df['Month'].map(mo)
     
-    # Handle the booleans and categories
+    
     df['VisitorType'] = (df['VisitorType'] == 'Returning_Visitor').astype(int)
     df['Weekend'] = df['Weekend'].astype(int)
     df['Revenue'] = df['Revenue'].astype(int)
     
-    # Split into features (X) and target (y)
+    
     X = df.drop('Revenue', axis=1).values.tolist()
     y = df['Revenue'].tolist()
     
     return X, y
 
 def evaluate(actual, predicted):
-    # Zip 'em up and count hits
+    
     tp = sum(1 for a, p in zip(actual, predicted) if a == 1 and p == 1)
     tn = sum(1 for a, p in zip(actual, predicted) if a == 0 and p == 0)
     
@@ -39,16 +39,16 @@ def main():
         print("Provide the data file!")
         return
 
-    # Prep data
+   
     X, y = load_data(sys.argv[1])
     X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.4)
 
-    # Simple 1-NN model
+    
     model = KNeighborsClassifier(n_neighbors=1)
     model.fit(X_train, y_train)
     preds = model.predict(X_test)
 
-    # Results
+    
     sens, spec = evaluate(y_test, preds)
     
     print(f"Correct: {(y_test == preds).sum()}")
