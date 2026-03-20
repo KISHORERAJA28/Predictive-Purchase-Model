@@ -46,7 +46,7 @@ def main():
     preds = model.predict(X_test)
 
     
-    sens, spec = (y_test, preds)
+    sens, spec = evaluate(y_test, preds)
     
     print(f"Correct: {(y_test == preds).sum()}")
     print(f"Incorrect: {(y_test != preds).sum()}")
