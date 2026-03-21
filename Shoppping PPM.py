@@ -13,7 +13,7 @@ def load_data(filename):
     df['Month'] = df['Month'].map(mo)
     df['VisitorType'] = (df['VisitorType'] == 'Returning_Visitor').astype(int)
     df['Weekend'] = df['Weekend'].astype(int)
-    df['Revenue'] = df['Revenue'].(int)
+    df['Revenue'] = df['Revenue'].astype(int)
     
     
     X = df.drop('Revenue', axis=1).values.tolist()
