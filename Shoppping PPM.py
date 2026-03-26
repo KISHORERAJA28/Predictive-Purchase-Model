@@ -43,7 +43,7 @@ def main():
     
     model = KNeighborsClassifier(n_neighbors=1)
     model.fit(X_train, y_train)
-    preds = model.predict(X_)
+    preds = model.predict(X_test)
 
     
     sens, spec = evaluate(y_test, preds)
