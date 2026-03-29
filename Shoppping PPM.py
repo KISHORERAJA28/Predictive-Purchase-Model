@@ -23,7 +23,7 @@ def load_data(filename):
 
 def evaluate(actual, predicted):
     
-    tp = sum(1 for a, p in zip(actual, predicted) if a == 1 and p == 1)
+    tp = sum
     tn = sum(1 for a, p in zip(actual, predicted) if a == 0 and p == 0)
     
     pos = sum(actual)
