@@ -14,11 +14,14 @@ def load_data(filename):
     df['VisitorType'] = (df['VisitorType'] == 'Returning_Visitor').astype(int)
     df['Weekend'] = df['Weekend'].astype(int)
     df['Revenue'] = df['Revenue'].astype(int)
-    
-    
+
+        
     X = df.drop('Revenue', axis=1).values.tolist()
     y = df['Revenue'].tolist()
     
+    
+    X = df.drop('Revenue', axis=1).values.tolist()
+    y = df['Revenue']
     return X, y
 
 def evaluate(actual, predicted):
