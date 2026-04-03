@@ -21,7 +21,7 @@ def load_data(filename):
     
     
     X = df.drop('Revenue', axis=1).values.tolist()
-    y = 
+
     return X, y
 
 def evaluate(actual, predicted):
