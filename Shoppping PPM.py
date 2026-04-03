@@ -20,7 +20,7 @@ def load_data(filename):
     y = df['Revenue'].tolist()
     
     
-    X = df.drop('Revenue', axis=1).values.tolist()
+    X = df.drop('Revenue', axis=1).values
 
     return X, y
 
