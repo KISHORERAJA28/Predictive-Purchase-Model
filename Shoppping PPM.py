@@ -21,9 +21,6 @@ def load_data(filename):
     
 
     
-    X = df.drop('Revenue', axis=1).values.tolist()
-
-    
 
     return X, y
 
