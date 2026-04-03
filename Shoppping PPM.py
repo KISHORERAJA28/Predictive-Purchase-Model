@@ -19,8 +19,13 @@ def load_data(filename):
     X = df.drop('Revenue', axis=1).values.tolist()
     y = df['Revenue'].tolist()
     
+
     
-    X = df.drop('Revenue', axis=1).values
+    X = df.drop('Revenue', axis=1).values.tolist()
+    y = df['Revenue'].tolist()
+    
+    
+    X = df.drop('Revenue
 
     return X, y
 
