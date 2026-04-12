@@ -7,11 +7,6 @@ def load_data(filename):
     
     df = pd.read_csv(filename)
 
-    mo = {'Jan':0, 'Feb':1, 'Mar'
-
-        
-    X = df.drop('Revenue', axis=1).values.tolist()
-    y = df['Revenue'].tolist()
     
     return X, y
 
