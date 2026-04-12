@@ -34,17 +34,6 @@ def evaluate(actual, predicted):
 def main():
     if len(sys.argv) != 2:
         print("Provide the data file!")
-        return
-
-   
-    X, y = load_data(sys.argv[1])
-    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.4)
-
-    
-    model = KNeighborsClassifier(n_neighbors=1)
-    model.fit(X_train, y_train)
-    preds = model.predict(X_test)
-
     
     sens, spec = evaluate(y_test, preds)
     
