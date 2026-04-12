@@ -15,12 +15,7 @@ def load_data(filename):
     
     return X, y
 
-def evaluate(actual, predicted):
-    
-
-    return (tp / pos, tn / neg)
-
-def main():
+def evaluate(actual, predicted)
     if len(sys.argv) != 2:
         print("Provide the data file!")
     
