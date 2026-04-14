@@ -9,17 +9,7 @@ def load_data(filename)
 
 def main():
     if len(sys.argv) != 2:
-        print("Provide the data file!")
-        return
-
-    print(f"Correct: {(y_test == preds).sum()}")
-    print(f"Incorrect: {(y_test != preds).sum()}")
-    print(f"Sensitivity: {100 * sens:.2f}%")
-    print(f"Specificity: {100 * spec:.2f}%")
-
-if __name__ == "__main__":
-    main()
-
+        print("Provide
 
 
 
