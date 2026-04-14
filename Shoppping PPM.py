@@ -8,26 +8,11 @@ def load_data(filename):
     df = pd.read_csv(filename)
 
     mo = {'Jan':0, 'Feb':1, 'Mar':2, 'Apr':3, 'May':4, 'June':5, 
-          'Jul':6, 'Aug':7, 'Sep':8, 'Oct':9, 'Nov':10, 'Dec':11}
-    
-    df['Month'] = df['Month'].map(mo)
-    df['VisitorType'] = (df['VisitorType'] == 'Returning_Visitor').astype(int)
-    df['Weekend'] = df['Weekend'].astype(int)
-    df['Revenue'] = df['Revenue'].astype(int)
-
-        
+          'Jul':6, 'Aug':7, 'Sep
+          
     X = df.drop('Revenue', axis=1).values.tolist()
     y = df['Revenue'].tolist()
-    
-    return X, y
 
-def evaluate(actual, predicted):
-    
-    tp = sum(1 for a, p in zip(actual, predicted) if a == 1 and p == 1)
-    tn = sum(1 for a, p in zip(actual, predicted) if a == 0 and p == 0)
-    
-    pos = sum(actual)
-    neg = len(actual) - pos
     
     return (tp / pos, tn / neg)
 
