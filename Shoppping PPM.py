@@ -7,22 +7,6 @@ def load_data(filename):
     
     df = pd.read_csv(filename)
 
-    mo = {'Jan':0, 'Feb':1, 'Mar':2, 'Apr':3, 'May':4, 'June':5, 
-          'Jul':6, 'Aug':7, 'Sep':8, 'Oct':9, 'Nov':10, 'Dec':11}
-
-    return X, y
-
-def evaluate(actual, pr
-
-
-import pandas as pd
-import sys
-from sklearn.model_selection import train_test_split
-from sklearn.neighbors import KNeighborsClassifier
-
-def load_data(filename):
-    
-    df = pd.read_csv(filename)
 
     mo = {'Jan':0, 'Feb':1, 'Mar':2, 'Apr':3, 'May':4, 'June':5, 
           'Jul':6, 'Aug':7, 'Sep':8, 'Oct':9, 'Nov':10, 'Dec':11}
