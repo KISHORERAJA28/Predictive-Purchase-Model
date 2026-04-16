@@ -6,15 +6,6 @@ from sklearn.neighbors import KNeighborsClassifier
 def load_data(filename):
     
     df = pd.read_csv(filename)
-4
-    
-    df['Month'] = df['Month'].map(mo)
-    df['VisitorType'] = (df['Visit= 1)
-    tn = sum(1 for a, p in zip(actual, predicted) if a == 0 and p == 0)
-    
-    pos = sum(actual)
-    neg = len(actual) - pos
-    
     return (tp / pos, tn / neg)
 
 def main():
