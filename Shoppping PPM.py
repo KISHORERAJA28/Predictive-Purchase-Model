@@ -1,17 +1,4 @@
 
-    neg = len(actual) - pos
-    
-    return (tp / pos, tn / neg)
-
-def main():
-
-    
-
-
-
-
-
-
 
 
 
