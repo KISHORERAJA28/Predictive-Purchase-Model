@@ -4,18 +4,7 @@
     return (tp / pos, tn / neg)
 
 def main():
-    if len(sys.argv) != 2:
-
     
-    model = KNeighborsClassifier(n_neighbors=1)
-    model.fit(X_train, y_train)
-    preds = model.predict(X_test)
-
-    
-    sens, spec = evaluate(y_test, preds)
-    
-    print(f"Correct: {(y_test == preds).sum()}")
-    print(f"Incorrect: {(y_test != preds).sum()}")
     print(f"Sensitivity: {100 * sens:.2f}%")
     print(f"Specificity: {100 * spec:.2f}%")
 
