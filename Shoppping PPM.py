@@ -28,8 +28,6 @@ def main():
         print("Provide the data file!")
 
    
-    X, y = load_data(sys.argv[1])
-    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.4)
 
 
     
