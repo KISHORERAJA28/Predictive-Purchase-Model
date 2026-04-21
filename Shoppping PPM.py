@@ -26,7 +26,6 @@ def evaluate(actual, predicted):
 def main():
     if len(sys.argv) != 2:
         print("Provide the data file!")
-        return
 
    
     X, y = load_data(sys.argv[1])
