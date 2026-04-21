@@ -23,9 +23,6 @@ def evaluate(actual, predicted):
     
     pos = sum(actual)
     neg = len(actual) - pos
-    
-    return (tp / pos, tn / neg)
-
 def main():
     if len(sys.argv) != 2:
         print("Provide the data file!")
