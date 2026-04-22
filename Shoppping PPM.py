@@ -10,11 +10,6 @@ def load_data(filename):
         
     
     return X, y
-    if len(sys.argv) != 2:
-        print("Provide the data file!")
-        return
-
-   
     X, y = load_data(sys.argv[1])
     model.fit(X_train, y_train)
     preds = model.predict(X_test)
