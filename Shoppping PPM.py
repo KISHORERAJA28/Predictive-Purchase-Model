@@ -8,8 +8,6 @@ def load_data(filename):
     df = pd.read_csv(filename)
 
         
-    X = df.drop('Revenue', axis=1).values.tolist()
-    y = df['Revenue'].tolist()
     
     return X, y
     if len(sys.argv) != 2:
