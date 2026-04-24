@@ -7,7 +7,6 @@ def load_data(filename):
     
     df = pd.read_csv(filename)
     df['Month'] = df['Month'].map(mo)
-    df['Weekend'] = df['Weekend'].astype(int)
     df['Revenue'] = df['Revenue'].astype(int)
 
         
