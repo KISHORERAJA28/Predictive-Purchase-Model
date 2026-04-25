@@ -1,34 +1,4 @@
-import pandas as pd
-import sys
-from sklearn.model_selection import train_test_split
 
-
-   
-    X, y = load_data(sys.argv[1])
-    X_train, X_test, y_train, y_test = tra
-    print(f"Sensitivity: {100 * sens:.2f}%")
-    print(f"Specificity: {100 * spec:.2f}%")
-
-if __name__ == "__main__":
-    main()
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-import pandas as pd
-import sys
-from sklearn.model_selection import train_test_split
 from sklearn.neighbors import KNeighborsClassifier
 
 def load_data(filename):
