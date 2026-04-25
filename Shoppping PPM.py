@@ -5,18 +5,7 @@ from sklearn.model_selection import train_test_split
 
    
     X, y = load_data(sys.argv[1])
-    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.4)
-
-    
-    model = KNeighborsClassifier(n_neighbors=1)
-    model.fit(X_train, y_train)
-    preds = model.predict(X_test)
-
-    
-    sens, spec = evaluate(y_test, preds)
-    
-    print(f"Correct: {(y_test == preds).sum()}")
-    print(f"Incorrect: {(y_test != preds).sum()}")
+    X_train, X_test, y_train, y_test = tra
     print(f"Sensitivity: {100 * sens:.2f}%")
     print(f"Specificity: {100 * spec:.2f}%")
 
