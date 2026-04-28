@@ -5,15 +5,6 @@ from sklearn.neighbors import KNeighborsClassifier
 
 def load_data(filename):
     }
-    
-    df['Month'] = df['Month
-
-def evaluate(actual, p
-    neg = len(actual) - pos
-    
-    return (tp / pos, tn / neg)
-
-def main():
     if len(sys.argv) != 2:
         print("Provide the data file!")
         return
