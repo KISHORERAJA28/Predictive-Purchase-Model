@@ -6,13 +6,7 @@ from sklearn.neighbors import KNeighborsClassifier
 def load_data(filename):
     }
     
-    df['Month'] = df['Month'].map(mo)
-    df['VisitorType'] = (df['Visit
-        
-    X = df.drop('Revenue', axis=1).values.tolist()
-    y = df['Revenue'].tolist()
-    
-    return X, y
+    df['Month'] = df['Month
 
 def evaluate(actual, predicted):
     
