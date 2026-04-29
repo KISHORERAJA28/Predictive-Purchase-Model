@@ -1,20 +1,6 @@
 import pandas as pd
 import sys
-from sklearn.model_selection import train_test_split
-1
-    y = df['Revenue'].tolist()
-    
-    return X, y
 
-def evaluate(actual, predicted):3
-
-def main():
-    if len(sys.argv) != 2:
-        print("Provide the data file!")
-        return
-
-   
-    X, y = load_data(sys.argv[1])
     X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.4)
 
     
