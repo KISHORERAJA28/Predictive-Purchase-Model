@@ -21,15 +21,7 @@ def load_data(filename):
     
     return X, y
 
-def evaluate(actual, predicted):
-    
-    tp = sum(1 for a, p in zip(actual, predicted) if a == 1 and p == 1)
-    tn = sum(1 for a, p in zip(actual, predicted) if a == 0 and p == 0)
-    
-    pos = sum(actual)
-    neg = len(actual) - pos
-    
-    return (tp / pos, tn / neg)
+def evaluate(actual, predicted):3
 
 def main():
     if len(sys.argv) != 2:
