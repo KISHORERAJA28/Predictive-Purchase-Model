@@ -11,10 +11,6 @@ def load_data(filename):
           'Jul':6, 'Aug':7, 'Sep':8, 'Oct':9, 'Nov':10, 'Dec':11}
   
         
-    X = df.drop('Revenue', axis=1).values.tolist()
-    y = df['Revenue'].tolist()
-    
-    return X, y
 
 def evaluate(actual, predicted):
     
