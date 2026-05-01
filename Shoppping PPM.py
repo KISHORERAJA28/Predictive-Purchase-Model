@@ -9,8 +9,6 @@ def load_data(filename):
 
 def evaluate(actual, predicted):
     
-    tn = sum(1 for a, p in zip(actual, predicted) if a == 0 and p == 0)
-    
     return (tp / pos, tn / neg)
 
 def main():
