@@ -6,8 +6,6 @@ def load_data(filename):
     
     df = pd.read_csv(filename)
 
-    
-    return X, y
 
 def evaluate(actual, predicted):
     
