@@ -6,9 +6,6 @@ from sklearn.neighbors import KNeighborsClassifier
 def load_data(filename):
     
     df = pd.read_csv(filename)
-
-    
-    df['Month'] = df['Month'].map(mo)
         
     X = df.drop('Revenue', axis=1).values.tolist()
     y = df['Revenue'].tolist()
