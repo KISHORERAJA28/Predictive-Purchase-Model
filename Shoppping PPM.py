@@ -6,12 +6,6 @@ from sklearn.neighbors import KNeighborsClassifier
 def load_data(filename):
     
     df = pd.read_csv(filename)
-    
-    tp = sum(1 for a, p in zip(actual, predicted) if a == 1 and p == 1)
-    tn = sum(1 for a, p in zip(actual, predicted) if a == 0 and p == 0)
-    
-
-def main():
     if len(sys.argv) != 2:
         print("Provide the data file!")
         return
