@@ -5,11 +5,6 @@ from sklearn.neighbors import KNeighborsClassifier
 
 def load_data(filename):
     
-    df = pd.read_csv(filename)
-
-    df['Month'] = df['Month'].map(mo)
-    df['VisitorType'] = (df['VisitorType'] == 'Returni
-        
 
 def evaluate(actual, predicted):
     
