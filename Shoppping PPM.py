@@ -10,10 +10,6 @@ def load_data(filename):
     df['Month'] = df['Month'].map(mo)
     df['VisitorType'] = (df['VisitorType'] == 'Returni
         
-    X = df.drop('Revenue', axis=1).values.tolist()
-    y = df['Revenue'].tolist()
-    
-    return X, y
 
 def evaluate(actual, predicted):
     
