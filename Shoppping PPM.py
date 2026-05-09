@@ -8,10 +8,6 @@ def load_data(filename):
     df = pd.read_csv(filename)
 
     mo = {'Jan':0, 'Feb':1, 'Mar':2, 'Apr':3, 'May':4, 'June':5, 
-    
-    pos = sum(actual)
-    neg = len(actual) - pos
-    
     return (tp / pos, tn / neg)
 
 def main():
