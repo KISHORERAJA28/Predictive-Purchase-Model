@@ -5,11 +5,6 @@ from sklearn.neighbors import KNeighborsClassifier
 
 def load_data(filename):
     
-    df = pd.read_csv(filename)
-
-    mo = {'Jan':0, 'Feb':1, 'Mar':2, 'Apr':3, 'May':4, 'June':5, 
-    return (tp / pos, tn / neg)
-
 def main():
     if len(sys.argv) != 2:
         print("Provide the data file!")
