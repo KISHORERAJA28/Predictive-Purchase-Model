@@ -3,13 +3,6 @@ import sys
 from sklearn.model_selection import train_test_split
 from sklearn.neighbors import KNeighborsClassifier
 
-def load_data(filename):
-    
-    df = pd.read_csv(filename)
-
-
-def main():
-    if len(sys.argv) != 2:
         print("Provide the data file!")
         return
 
