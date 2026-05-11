@@ -1,13 +1,4 @@
-import pandas as pd
-import sys
-from sklearn.model_selection import train_test_split
-from sklearn.neighbors import KNeighborsClassifier
 
-        print("Provide the data file!")
-        return
-
-   
-    X, y = load_data(sys.argv[1])
     X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.4)
 
     
